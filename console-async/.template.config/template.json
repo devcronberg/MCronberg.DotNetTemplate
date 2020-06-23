@@ -4,7 +4,7 @@
     "classifications": [ "Common", "Console" ],    
     "identity": "MCronberg.DotNetTemplates.ConsoleAsync",
     "name": "Console Application ASync (MCronberg)",
-    "shortName": "console_async",
+    "shortName": "console_async1",
     "tags": {
       "language": "C#",
       "type": "project"
