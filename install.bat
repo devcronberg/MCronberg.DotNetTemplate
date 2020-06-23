@@ -1,4 +1,4 @@
-dotnet new --debug:reinit
+rem dotnet new --debug:reinit
 cd aspnet-mvc-start
 dotnet new -i ./
 cd..
