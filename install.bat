@@ -5,4 +5,3 @@ cd..
 cd console-async
 dotnet new -i ./
 cd..
-pause
