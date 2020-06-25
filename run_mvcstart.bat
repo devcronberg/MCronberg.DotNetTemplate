@@ -5,4 +5,4 @@ cd\kursus
 set /p navn="App navn: "
 dotnet new mvcstart -n %navn%
 cd %navn%
-%navn%.sln
+start "" "%navn%.sln"
