@@ -1,5 +1,5 @@
 namespace minweb.Models {
-  class MinModel {
+  public class MinModel {
 
   }
 }
