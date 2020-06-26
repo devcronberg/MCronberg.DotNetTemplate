@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using System.Collections.Generic;
 
-namespace console_async
+namespace Company.ConsoleApplication1
 {
     class Program
     {

@@ -1,4 +1,4 @@
-namespace minweb.Models {
+namespace Company.WebApp1.Models {
   public class MinModel {
 
   }

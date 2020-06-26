@@ -6,7 +6,22 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace minweb.Controllers
+/*
+MCronberg.CSCourseHelper.Standard (NuGET)
+
+Brug feks 
+
+IPersonRepository rep = new PersonRepositoryStatic();
+var listeAfPersoner = rep.GetPeople();
+
+eller blot
+
+var listeAfPersoner = PersonRepositoryRandom.JustGetPeople();
+
+*/
+using MCronberg;
+
+namespace Company.WebApp1.Controllers
 {
     public class AppController : Controller
     {
@@ -15,6 +30,18 @@ namespace minweb.Controllers
         {
             return View();
         }
+
+        /* 
+        
+        Eller async
+
+        [HttpGet("~/")]
+        public async Task<IActionResult> Index()
+        {          
+            await Task.Delay(10);
+            return View();
+        }
+        */
 
     }
 }
