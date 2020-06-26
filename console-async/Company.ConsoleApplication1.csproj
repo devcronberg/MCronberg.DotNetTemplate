@@ -6,4 +6,8 @@
     <RootNamespace>Company.ConsoleApplication1</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="MCronberg.CSCourseHelper.Standard" Version="1.0.4" />
+  </ItemGroup>
+
 </Project>
