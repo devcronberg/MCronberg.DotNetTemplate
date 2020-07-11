@@ -6,3 +6,6 @@ cd..
 cd console-async
 dotnet new -i ./
 cd..
+cd blazor-webassembly-start
+dotnet new -i ./
+cd..
