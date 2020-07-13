@@ -9,3 +9,6 @@ cd..
 cd blazor-webassembly-start
 dotnet new -i ./
 cd..
+cd blazor-server-start
+dotnet new -i ./
+cd..

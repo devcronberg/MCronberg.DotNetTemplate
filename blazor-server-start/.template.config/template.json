@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Michell Cronberg",
+  "classifications": ["Web", "Blazor"],
+  "identity": "MCronberg.DotNetTemplates.BlazorServerApplication1",
+  "name": "Blazor Server App Start (MCronberg)",
+  "shortName": "blazorserver_start",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "defaultName": "BlazorServerApplication1",
+  "sourceName": "Company.BlazorServerApplication1",
+  "preferNameDirectory": true
+}
