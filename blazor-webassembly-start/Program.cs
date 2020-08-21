@@ -11,6 +11,8 @@ namespace Company.BlazorWebAssemblyApplication1 {
             builder.RootComponents.Add<App>("app");
 
             builder.Services.AddTransient(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+            builder.Services.AddSingleton(serviceProvider => (IJSInProcessRuntime)serviceProvider.GetRequiredService<IJSRuntime>());
+            builder.Services.AddSingleton(serviceProvider => (WebAssemblyJSRuntime)serviceProvider.GetRequiredService<IJSRuntime>());
 
             await builder.Build().RunAsync();
         }
