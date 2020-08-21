@@ -1,4 +1,5 @@
 ﻿@page "/"
+@inject IJSRuntime JSRuntime
 
 <p>Current count: @currentCount</p>
 <button @onclick="IncrementCount">Click me!</button>
@@ -9,5 +10,11 @@
     void IncrementCount()
     {
         currentCount++;
+
+        // VS / Debugger / Output
+        System.Diagnostics.Debug.WriteLine(currentCount);
+
+        // Browser
+        JSRuntime.InvokeAsync<string>("console.log", currentCount);
     }
 }
