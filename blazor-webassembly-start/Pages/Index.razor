@@ -1,4 +1,5 @@
 @page "/"
+@inject Microsoft.JSInterop.IJSInProcessRuntime js
 
 <p>Current count: @currentCount</p>
 <button @onclick="IncrementCount">Click me!</button>
@@ -8,5 +9,13 @@
 
     void IncrementCount() {
         currentCount++;
+
+        // Browser console
+        Log(currentCount);
+    }
+
+    void Log(object txt)
+    {
+        js.Invoke<string>("console.log", txt);
     }
 }
