@@ -1,4 +1,5 @@
 ﻿using System;
+using MCronberg;
 
 namespace Company.ConsoleApplication1 {
     class Program {
@@ -7,7 +8,7 @@ namespace Company.ConsoleApplication1 {
             try
             {
                 Console.WriteLine("Her starter program");
-
+                
                 // Kode
 
                 Console.WriteLine("Her slutter program");
