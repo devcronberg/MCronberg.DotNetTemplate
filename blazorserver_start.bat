@@ -1,3 +1,4 @@
+pushd %~dp0
 if not exist "C:\kursus\" mkdir C:\kursus
 c:
 cd\kursus
@@ -6,3 +7,4 @@ dotnet new blazorserver_start -n %navn%
 cd %navn%
 dotnet restore
 start "" "%navn%.csproj"
+popd
