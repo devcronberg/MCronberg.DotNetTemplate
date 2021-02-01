@@ -1,3 +1,4 @@
+pushd %~dp0
 if not exist "C:\kursus\" mkdir C:\kursus
 c:
 cd\kursus
@@ -7,3 +8,4 @@ cd %navn%
 dotnet restore
 libman restore
 start "" "%navn%.sln"
+popd
