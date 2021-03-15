@@ -18,5 +18,14 @@
         <component type="typeof(App)" render-mode="ServerPrerendered" />
     </app>
     <script src="_framework/blazor.server.js"></script>
+    <environment include="Development">
+        <!-- ved afvikling med debugger -->
+        <script>
+            console.log("Reload enabled");
+            Blazor.defaultReconnectionHandler._reconnectCallback = function (d) {
+                document.location.reload();
+            }
+        </script>
+    </environment>
 </body>
 </html>
