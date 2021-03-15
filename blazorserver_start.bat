@@ -6,5 +6,5 @@ set /p navn="App navn: "
 dotnet new blazorserver_start -n %navn%
 cd %navn%
 dotnet restore
-start "" "%navn%.csproj"
+start "" "%navn%.sln"
 popd

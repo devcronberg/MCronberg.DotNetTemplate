@@ -12,3 +12,4 @@ cd..
 cd blazor-server-start
 dotnet new -i ./
 cd..
+pause

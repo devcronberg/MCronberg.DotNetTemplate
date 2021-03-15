@@ -8,12 +8,12 @@ namespace Company.ConsoleApplication1
     {
         static async Task Main(string[] args)
         {
-            System.Console.WriteLine("Start");
+            Console.WriteLine("Start");
             await Task.Run(() =>
             {
                 System.Threading.Thread.Sleep(1000);
             });            
-            System.Console.WriteLine("End");
+            Console.WriteLine("End");
         }
     }
 }
